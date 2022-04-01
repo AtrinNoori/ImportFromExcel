@@ -30,6 +30,7 @@ namespace ImportFromExcel
         private void InitializeComponent()
         {
             this.TopTitle_PNL = new System.Windows.Forms.Panel();
+            this.VersionInfo_LBL = new System.Windows.Forms.Label();
             this.CloseBtn_PICBX = new System.Windows.Forms.PictureBox();
             this.title_LBL = new System.Windows.Forms.Label();
             this.Grid_PNL = new System.Windows.Forms.Panel();
@@ -40,19 +41,6 @@ namespace ImportFromExcel
             this.info_LBL = new System.Windows.Forms.Label();
             this.Import_BTN = new System.Windows.Forms.Button();
             this.Export_BTN = new System.Windows.Forms.Button();
-            this.VersionInfo_LBL = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TopTitle_PNL.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn_PICBX)).BeginInit();
             this.Grid_PNL.SuspendLayout();
@@ -72,6 +60,19 @@ namespace ImportFromExcel
             this.TopTitle_PNL.Name = "TopTitle_PNL";
             this.TopTitle_PNL.Size = new System.Drawing.Size(762, 28);
             this.TopTitle_PNL.TabIndex = 0;
+            // 
+            // VersionInfo_LBL
+            // 
+            this.VersionInfo_LBL.AutoSize = true;
+            this.VersionInfo_LBL.Dock = System.Windows.Forms.DockStyle.Left;
+            this.VersionInfo_LBL.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VersionInfo_LBL.ForeColor = System.Drawing.SystemColors.Control;
+            this.VersionInfo_LBL.Location = new System.Drawing.Point(145, 0);
+            this.VersionInfo_LBL.Name = "VersionInfo_LBL";
+            this.VersionInfo_LBL.Size = new System.Drawing.Size(48, 15);
+            this.VersionInfo_LBL.TabIndex = 2;
+            this.VersionInfo_LBL.Text = "Version:";
+            this.VersionInfo_LBL.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // CloseBtn_PICBX
             // 
@@ -115,19 +116,6 @@ namespace ImportFromExcel
             this.Data_GRD.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Data_GRD.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.Data_GRD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Data_GRD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8,
-            this.Column9,
-            this.Column10,
-            this.Column11,
-            this.Column12});
             this.Data_GRD.Location = new System.Drawing.Point(11, 11);
             this.Data_GRD.Name = "Data_GRD";
             this.Data_GRD.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
@@ -206,103 +194,6 @@ namespace ImportFromExcel
             this.Export_BTN.UseVisualStyleBackColor = true;
             this.Export_BTN.Click += new System.EventHandler(this.Export_BTN_Click);
             // 
-            // VersionInfo_LBL
-            // 
-            this.VersionInfo_LBL.AutoSize = true;
-            this.VersionInfo_LBL.Dock = System.Windows.Forms.DockStyle.Left;
-            this.VersionInfo_LBL.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VersionInfo_LBL.ForeColor = System.Drawing.SystemColors.Control;
-            this.VersionInfo_LBL.Location = new System.Drawing.Point(145, 0);
-            this.VersionInfo_LBL.Name = "VersionInfo_LBL";
-            this.VersionInfo_LBL.Size = new System.Drawing.Size(48, 15);
-            this.VersionInfo_LBL.TabIndex = 2;
-            this.VersionInfo_LBL.Text = "Version:";
-            this.VersionInfo_LBL.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // Column1
-            // 
-            this.Column1.Frozen = true;
-            this.Column1.HeaderText = "1";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 50;
-            // 
-            // Column2
-            // 
-            this.Column2.Frozen = true;
-            this.Column2.HeaderText = "2";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 50;
-            // 
-            // Column3
-            // 
-            this.Column3.Frozen = true;
-            this.Column3.HeaderText = "3";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 50;
-            // 
-            // Column4
-            // 
-            this.Column4.Frozen = true;
-            this.Column4.HeaderText = "4";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 50;
-            // 
-            // Column5
-            // 
-            this.Column5.Frozen = true;
-            this.Column5.HeaderText = "5";
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 50;
-            // 
-            // Column6
-            // 
-            this.Column6.Frozen = true;
-            this.Column6.HeaderText = "6";
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 50;
-            // 
-            // Column7
-            // 
-            this.Column7.Frozen = true;
-            this.Column7.HeaderText = "7";
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 50;
-            // 
-            // Column8
-            // 
-            this.Column8.Frozen = true;
-            this.Column8.HeaderText = "8";
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 50;
-            // 
-            // Column9
-            // 
-            this.Column9.Frozen = true;
-            this.Column9.HeaderText = "9";
-            this.Column9.Name = "Column9";
-            this.Column9.Width = 50;
-            // 
-            // Column10
-            // 
-            this.Column10.Frozen = true;
-            this.Column10.HeaderText = "10";
-            this.Column10.Name = "Column10";
-            this.Column10.Width = 50;
-            // 
-            // Column11
-            // 
-            this.Column11.Frozen = true;
-            this.Column11.HeaderText = "11";
-            this.Column11.Name = "Column11";
-            this.Column11.Width = 50;
-            // 
-            // Column12
-            // 
-            this.Column12.Frozen = true;
-            this.Column12.HeaderText = "12";
-            this.Column12.Name = "Column12";
-            this.Column12.Width = 50;
-            // 
             // MainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -343,18 +234,6 @@ namespace ImportFromExcel
         private System.Windows.Forms.Button Import_BTN;
         private System.Windows.Forms.Button Export_BTN;
         private System.Windows.Forms.Label VersionInfo_LBL;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
     }
 }
 
